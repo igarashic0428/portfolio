@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Chihaya Igarashi ポートフォリオ'>
+  <meta property='og:url' content='https://igarashic0428.github.io/portfolio'>
+  <meta property='og:description' content='Chihaya Igarashiのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Chihaya Igarashiのポートフォリオサイトです" />
+  <title>Chihaya Igarashi ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">Chihaya Igarashi ポートフォリオ</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#require">要件</a></li>
+            <li class="gnav-item"><a href="#design">設計図</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- PageTop -->
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">自作ゲーム</h2>
+          <h2 class="article-title">ウィザード子がゆく</h2>
+          <div class="article-body">
+            <p>
+              <img src="img/game_capture.jpg" alt="">
+            </p>
+            <p>
+              奥行のある横スクロールアクションゲームです。<br>
+              6体のガイコツ倒してゴールを目指すというタイムアタックゲームになっています。
+            </p>
+            <h3>URL：ゲーム</h3>
+            <p><a href="https://igarashic0428.github.io/WizYuku_Game/" target="_blank" rel="noopener">https://igarashic0428.github.io/WizYuku_Game</a></p>
+
+            <h3>URL：Unityプロジェクト一式</h3>
+            <p><a href="https://github.com/igarashic0428/WizYuku" target="_blank" rel="noopener">https://github.com/igarashic0428/WizYuku</a></p>
+
+            <h3>製作期間</h3>
+            <p>
+              2021年8月～2022年2月末、2022年5月上旬<br>
+              ※Unityの基礎勉強に4ヶ月、ゲーム製作に約2ヶ月を費やしました。<br>
+              　仕事をしながらだったので、1日平均2時間計算で約360時間かけて製作していました。
+            </p>
+
+            <h3>開発環境・ツール</h3>
+            ・開発言語：C#<br>
+            ・開発エンジン：Unity
+
+            <h3>担当</h3>
+            <p>素材サイトから拝借した以外は全て1人で製作しました</p>
+
+            <h3>製作過程について</h3>
+            <p>
+                  製作にあたり、まずはどのようなゲームを作成したいか要件を箇条書きし、そこから設計に落とし込みました。
+              <br>設計ではクラス図、シーケンス図を作成する事で、それぞれのソースコードの役割と繋がりを明確化しました。
+              <br>コーディングしながら設計図も修正していた為、細かい内容になっていますが、ソースコードの管理・修正を容易に行うことが出来ました。
+            </p>
+          </div>
+
+        </div>
+      </article>
+      <!-- /PageTop -->
+
+      <!-- require -->
+      <section class="works section" id="require">
+        <article class="article">
+          <div class="article-container">
+            <h2 class="article-title">要件</h2>
+            <div class="article-body">
+              <h3>要件</h3>
+              <p>
+                <h4>概要</h4>
+                    ・奥行あり横スクロールアクションゲーム
+                <br>・1人用　プレイ時間3分程度
+                <br>・敵を倒してゴールを目指す
+              </p>
+              <p>
+                <h4>プレイヤー</h4>
+                    ・左クリック(タップ) → 移動、攻撃
+                <br>・右クリック or 上フリック → ジャンプ
+                <br>・敵からの攻撃を受けるとダメージを負う
+                <br>・HPが無くなるとゲームオーバーになる
+              <p>
+                <h4>敵</h4>
+                    ・プレイヤーを見つけると追いかけて攻撃する
+                <br>・プレイヤーからの攻撃を受けるとダメージを負う
+                <br>・HPが無くなると消滅する
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- /require -->
+
+      <!-- design -->
+      <section class="works section" id="design">
+        <article class="article">
+          <div class="article-container">
+            <h2 class="article-title">設計図</h2>
+            <div class="article-body">
+
+              <!-- クラス図 -->
+              <h3>クラス図</h3>
+              <p>
+                <img src="img/class_diagram.png" alt="">
+              </p>
+              <!-- /クラス図 -->
+
+              <!-- シーケンス図 -->
+              <p>
+                <h3>シーケンス図</h3>
+              </p>
+              <p>
+              <h4>ステージ処理</h4>
+                <img src="img/sequence_stage.png" alt="">
+              </p>
+              <h4>入力処理</h4>
+              <p>
+                <img src="img/sequence_input.png" alt="">
+              </p>
+              <h4>プレイヤーがダメージを受ける処理</h4>
+              <p>
+                <img src="img/sequence_player_recieve_damage.png" alt="">
+              </p>
+              <h4>敵がダメージを受ける処理</h4>
+              <p>
+                <img src="img/sequence_enemy_recieve_damage.png" alt="">
+              </p>
+              <!-- /シーケンス図 -->
+
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- /design -->
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
